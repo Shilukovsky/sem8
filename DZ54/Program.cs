@@ -36,8 +36,8 @@ void GetSortMatrix (int [,] matrix)
                 if(matrix[i,k] < matrix[i,k + 1]) 
                 {
                     int temp = matrix[i,k + 1];
-                    matrix[i,k + 1] = matrix[i,k];
-                    matrix[i,k] = temp;
+                    matrix[i,k + 1] = matrix[i,k+1];
+                    matrix[i,k + 1] = temp;
                 }
             }
         }
